@@ -9,22 +9,22 @@
 </head>
 <body>
     <!-- HEADER -->
-    <div class="container mt-4">
-        <h1 class="text-center text-primary">
+    <div class="container mt-4"><!--tạo khung chứa, mt-4 = cách lề trên-->
+        <h1 class="text-center text-primary"><!--tiêu đề lớn, cơn giữa, màu xanh-->
             MA TRẬN KỸ NĂNG CNTT
         </h1>
-        <p class="text-center">
+        <p class="text-center"><!--đoạn văn căn giữa-->
             Website quản lý kỹ năng cá nhân
         </p>
     </div>
     <!-- THÔNG TIN -->
-    <div class="container mt-4">
-        <div class="card p-4">
-            <center>
-                <img src="4.jpg"
+    <div class="container mt-4"><!--tạo khung chứa, mt-4 = cách lề trên-->
+        <div class="card p-4"><!--tạo khung dạng card, p-4 = tạo khoảng trống bên trong-->
+            <center><!--căn giữa nội dung-->
+                <img src="ảnh/ảnh thẻ.jpg"
                      width="150"
-                     height="150">
-                <h3 class="mt-3">
+                     height="150"><!--hiển thị ảnh , kích thước 150x150-->
+                <h3 class="mt-3"><!--tiêu đề cỡ vừa, cách trên một chút-->
                     Nguyễn Thị Nhàn
                 </h3>
                 <p>
@@ -37,84 +37,110 @@
         </div>
     </div>
     <!-- FORM -->
-    <div class="container mt-5">
-        <div class="card">
-            <div class="card-header bg-success text-white">
+    <div class="container mt-5"><!--tạo khu vực form, cách trên lớn hơn-->
+        <div class="card"><!--tạo khung card-->
+            <div class="card-header bg-success text-white"><!--phần đầu card, nền xanh lá, chữ màu trắng-->
                 FORM NHẬP KỸ NĂNG
             </div>
-            <div class="card-body">
-                <form id="skillForm">
-                    <div class="row">
+            <div class="card-body"><!--phần thân của card-->
+                <form id="skillForm"><!--tạo form nhập dữ liệu, id="skillForm" → đặt tên form để JS dùng -->
+                    <div class="row"><!--tạo 1 hàng trong Bootstrap-->
                         <!-- MSSV -->
-                        <div class="col-md-4 mb-3">
-                            <label>Mã số sinh viên</label>
+                        <div class="col-md-4 mb-3"><!--col-md-4 → chiếm 4 cột, mb-3 → cách dưới-->
+                            <label>Mã số sinh viên</label><!--nhãn cho ô nhập-->
                             <input type="number"
                                    id="mssv"
                                    class="form-control"
-                                   required>
+                                   required><!--type="number" → chỉ nhập số, id="mssv" → tên ô nhập, form-control → style Bootstrap, required → bắt buộc nhập -->
                         </div>
                         <!-- HỌ TÊN -->
-                        <div class="col-md-4 mb-3">
+                        <div class="col-md-4 mb-3"><!--col-md-4 → cột rộng 4/12 màn hình, mb-3 → cách dưới-->
                             <label>Họ tên sinh viên</label>
                             <input type="text"
                                    id="hoten"
                                    class="form-control"
                                    required>
-                        </div>
-                        <!-- TÍN CHỈ -->
-                        <div class="col-md-4 mb-3">
+                        </div><!--input → ô nhập dữ liệu
+                                  type="text" → nhập chữ
+                                  id="hoten" → ô nhập họ tên
+                                  form-control → làm đẹp bằng Bootstrap
+                                  required → bắt buộc nhập -->
+                        <div class="col-md-4 mb-3"><!--col-md-4 → cột rộng 4/12 màn hình, mb-3 → cách dưới-->
                             <label>Số tín chỉ</label>
                             <input type="number"
                                    id="tinchi"
                                    class="form-control"
                                    required>
-                        </div>
+                        </div><!--input → ô nhập dữ liệu
+                              type="number" → chỉ nhập số
+                              id="tinchi"  → ô nhập tín chỉ
+                              form-control → làm đẹp bằng Bootstrap
+                              required → bắt buộc nhập-->
                         <!-- CÔNG NGHỆ -->
-                        <div class="col-md-3 mb-3">
+                        <div class="col-md-3 mb-3"><!--col-md-4 → cột rộng 4/12 màn hình, mb-3 → cách dưới-->
                             <label>Tên công nghệ</label>
                             <input type="text"
                                    id="ten"
                                    class="form-control"
                                    required>
-                        </div>
+                        </div><!--input → ô nhập dữ liệu
+                              type="text" → nhập chữ
+                              id="ten" → ô nhập  tên
+                              form-control → làm đẹp bằng Bootstrap
+                              required → bắt buộc nhập-->
                         <!-- NĂM -->
-                        <div class="col-md-3 mb-3">
+                        <div class="col-md-3 mb-3"><!--col-md-4 → cột rộng 4/12 màn hình, mb-3 → cách dưới-->
                             <label>Năm ban hành</label>
                             <input type="number"
                                    id="nam"
                                    class="form-control"
                                    required>
-                        </div>
+                        </div><!--input → ô nhập dữ liệu
+                              type="number" → chỉ nhập số
+                              id="nam"  → ô nhập năm
+                              form-control → làm đẹp bằng Bootstrap
+                              required → bắt buộc nhập-->
                         <!-- MỨC ĐỘ -->
-                        <div class="col-md-3 mb-3">
+                        <div class="col-md-3 mb-3"><!--col-md-4 → cột rộng 4/12 màn hình, mb-3 → cách dưới-->
                             <label>Mức độ</label>
                             <input type="number"
                                    id="mucdo"
                                    class="form-control"
                                    required>
-                        </div>
+                        </div><!--input → ô nhập dữ liệu
+                              type="number" → chỉ nhập số
+                              id="mucdo"  → ô nhập mức độ
+                              form-control → làm đẹp bằng Bootstrap
+                              required → bắt buộc nhập-->
                         <!-- GHI CHÚ -->
-                        <div class="col-md-3 mb-3">
+                        <div class="col-md-3 mb-3"><!--col-md-4 → cột rộng 4/12 màn hình, mb-3 → cách dưới-->
                             <label>Ghi chú</label>
                             <input type="text"
                                    id="ghichu"
                                    class="form-control">
-                        </div>
+                        </div><!--input → ô nhập dữ liệu
+                              type="text" → nhập chữ
+                              id="ghichu" → ô nhập ghi chú
+                              form-control → làm đẹp bằng Bootstrap
+                              required → bắt buộc nhập-->
                     </div>
                     <button type="submit"
                             class="btn btn-success">
                         Thêm kỹ năng
-                    </button>
+                    </button><!--button → tạo nút bấm
+                                type="submit" → gửi dữ liệu form
+                                btn → style nút Bootstrap
+                                btn-success → nút màu xanh lá-->
                 </form>
             </div>
         </div>
     </div>
     <!-- BẢNG -->
-    <div class="container mt-5">
-        <table class="table table-bordered text-center">
-            <thead class="table-dark">
-                <tr>
-                    <th>STT</th>
+    <div class="container mt-5"><!--tạo khung chứa bảng, mt-5 → cách trên lớn-->
+        <table class="table table-bordered text-center"><!--table → tạo bảng, table → style Bootstrap, table-bordered → có viền, text-center → căn giữa chữ-->
+            <thead class="table-dark"><!--phần đầu bảng,table-dark → nền đen-->
+                <tr><!--hàng-->
+                    <th>STT</th><!--cột STT-->
                     <th>MSSV</th>
                     <th>Họ tên</th>
                     <th>Tín chỉ</th>
@@ -124,15 +150,21 @@
                     <th>Ghi chú</th>
                 </tr>
             </thead>
-            <tbody id="tableBody">
+            <tbody id="tableBody"><!--phần thân bảng,id="tableBody" → JavaScript sẽ thêm dữ liệu vào đây-->
             </tbody>
         </table>
     </div>
     <!-- TOAST -->
-    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div class="toast-container position-fixed bottom-0 end-0 p-3"><!--tạo khu vực chứa thông báo
+                                                                   position-fixed → cố định vị trí
+                                                                   bottom-0 → sát dưới
+                                                                   end-0 → sát phải
+                                                                   p-3 → khoảng cách bên trong-->
         <div id="liveToast"
-             class="toast text-bg-success">
-            <div class="toast-body">
+             class="toast text-bg-success"><!--tạo hộp thông báo
+                                           id="liveToast" → JS gọi tới
+                                           text-bg-success → nền xanh lá-->
+            <div class="toast-body"><!--nội dung bên trong thông báo-->
                 Hồ sơ năng lực rất ấn tượng!
             </div>
         </div>
@@ -142,15 +174,16 @@
     <!-- File JS -->
     <script>
         // Mảng lưu dữ liệu
-let skillList = [];
+let skillList = [];//tạo mảng rỗng lưu danh sách kỹ năng
 // Lấy form
-const form = document.getElementById("skillForm");
+const form = document.getElementById("skillForm");//lấy form có id skillForm, lưu vào biến form
 // Khi submit form
-form.addEventListener("submit", function(e){
+form.addEventListener("submit", function(e)//bắt sự kiện khi nhấn nút submit, e = event (sự kiện)
+    {
     // Không reload trang
-    e.preventDefault();
+    e.preventDefault();//chặn tải lại trang khi submit form
     // Lấy dữ liệu từ form
-    let mssv = document.getElementById("mssv").value;
+    let mssv = document.getElementById("mssv").value;//lấy dữ liệu ô MSSV, .value = giá trị nhập vào
     let hoten = document.getElementById("hoten").value;
     let tinchi = document.getElementById("tinchi").value;
     let ten = document.getElementById("ten").value;
@@ -166,14 +199,27 @@ form.addEventListener("submit", function(e){
         nam,
         mucdo,
         ghichu
-    };
+    };//tạo object mới tên newCourse
     // Gọi hàm thêm dữ liệu
-    addCourse(newCourse, skillList);
+    addCourse(newCourse, skillList);//gọi hàm addCourse(), newCourse → dữ liệu mới nhập, skillList → mảng lưu dữ liệu
     // Reset form
-    form.reset();
+    form.reset();//xóa dữ liệu đã nhập trong form
 });
 // Hàm thêm dữ liệu
-function addCourse(newCourse, list) {
+/*function addCourse(newCourse, list) { 
+  if (mssv % 2 !== 0) { 
+    list.push(newCourse); 
+  } else { 
+    list.unshift(newCourse); 
+  } 
+  renderTable(list);}
+  Đoạn code sai ở phần xử lý điều kiện chẵn/lẻ của MSSV
+  Đề yêu cầu:MSSV lẻ → thêm đầu bảng, MSSV chẵn → thêm cuối bảng
+  push() = thêm cuối mảng
+  unshift() = thêm đầu mảng
+*/
+function addCourse(newCourse, list) 
+{
     // MSSV lẻ -> thêm đầu
     if (newCourse.mssv % 2 !== 0) {
         list.unshift(newCourse);
@@ -188,11 +234,13 @@ function addCourse(newCourse, list) {
     checkTotal(list);
 }
 // Hàm hiển thị bảng
-function renderTable(list){
+function renderTable(list)//tạo hàm hiển thị bảng, list = danh sách dữ liệu
+{
     let tableBody =
-        document.getElementById("tableBody");
-    tableBody.innerHTML = "";
-    list.forEach(function(item, index){
+        document.getElementById("tableBody");//lấy phần thân bảng có id tableBody
+    tableBody.innerHTML = "";//xóa dữ liệu cũ trong bảng
+    list.forEach(function(item, index)//duyệt từng phần tử trong mảng, item = dữ liệu từng dòng, index = số thứ tự
+    {
         tableBody.innerHTML += `
         <tr>
             <td>${index + 1}</td>
@@ -204,22 +252,24 @@ function renderTable(list){
             <td>${item.mucdo}</td>
             <td>${item.ghichu}</td>
         </tr>
-        `;
+        `;//thêm HTML vào bảng
     });
 }
 // Hàm kiểm tra tổng mức độ
-function checkTotal(list){
-    let total = 0;
+function checkTotal(list)//tạo hàm kiểm tra tổng mức độ
+{
+    let total = 0;//tạo biến tổng ban đầu bằng 0
     list.forEach(function(item){
-        total += Number(item.mucdo);
-    });
+        total += Number(item.mucdo);//cộng mức độ vào tổng, Number() → đổi sang kiểu số
+    });//duyệt từng phần tử trong mảng
     // Nếu tổng > 15
-    if(total > 15){
+    if(total > 15)//kiểm tra nếu tổng lớn hơn 15
+    {
         const toastElement =
-            document.getElementById("liveToast");
+            document.getElementById("liveToast");//kiểm tra nếu tổng lớn hơn 15
         const toast =
-            new bootstrap.Toast(toastElement);
-        toast.show();
+            new bootstrap.Toast(toastElement);//tạo toast Bootstrap
+        toast.show();//hiển thị thông báo toast
     }
 }
     </script>
